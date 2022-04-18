@@ -20,7 +20,6 @@ public class StreamingController {
         Resource resource =
                 this.resourceLoader.getResource(
                         "classpath:video/" + title + ".mp4");
-
         return Mono.fromSupplier(() -> resource);
 
     }
